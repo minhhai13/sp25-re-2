@@ -1,0 +1,168 @@
+body {
+  /* border: solid lightblue; */
+  margin: 0px;
+}
+.tittle {
+  color: #f16d16;
+  text-align: center;
+}
+.header {
+  display: flex;
+  border-bottom: double lightblue;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  width: 15%;
+}
+#logo img {
+  width: 100%;
+}
+.search button {
+  background-color: #f16d16;
+  color: white;
+  border: none;
+  height: 20px;
+}
+
+/* best seller */
+.bs {
+  display: flex;
+  gap: 60px;
+}
+
+.bsgallery {
+  display: flex;
+  width: 50%;
+}
+.smimg {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 50px;
+  margin-right: 10px;
+  width: 28%;
+}
+.smimg img {
+  width: 100%;
+}
+.lgimg img {
+  width: 100%;
+}
+
+.bsdes h2 {
+  color: #059386;
+  margin-top: 0px;
+  font-size: larger;
+}
+.avail {
+  color: aqua;
+}
+#bshr {
+  margin-right: 70px;
+  color: #059386;
+}
+.del {
+  color: red;
+}
+.btnlist {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  color: white;
+  background-color: #059386;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  height: 40px;
+  border-radius: 5px;
+}
+.para p {
+  text-align: justify;
+  max-width: 500px;
+}
+/* .saleoff */
+.saleoff {
+  display: flex;
+  padding: 0 50px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 0 10px grey;
+  margin: 0px 20px;
+  flex: 1;
+}
+.card img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của card */
+  height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+
+.button2 {
+  display: flex;
+  color: white;
+  background-color: #059386;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.new-price {
+  color: red;
+}
+
+.footer {
+  color: white;
+  background-color: #504c4b;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+  height: 120px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+  .bs {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .bsgallery {
+    flex-direction: column;
+  }
+
+  .smimg {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .bsdes {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .saleoff {
+    flex-direction: column; /* Chuyển từ hàng sang cột */
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .card {
+    flex: none; /* Hủy flex-grow */
+    width: 60%; /* Chiếm toàn bộ chiều rộng */
+    margin: 10px 0; /* Khoảng cách giữa các card */
+  }
+}
