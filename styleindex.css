@@ -41,7 +41,7 @@ body {
   gap: 13px;
   margin-left: 50px;
   margin-right: 10px;
-  width: 28%;
+  width: 27.6%;
 }
 .smimg img {
   width: 100%;
@@ -149,10 +149,13 @@ body {
     flex-direction: row;
     flex: 1;
   }
-
+  .lgimg {
+    padding: 10px 50px;
+  }
   .bsdes {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 50px;
+    box-sizing: border-box;
   }
   .saleoff {
     flex-direction: column; /* Chuyển từ hàng sang cột */
